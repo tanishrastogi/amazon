@@ -8,6 +8,8 @@ const defaultData = require("./defaultData")
 const router = require("./Routes/router");
 const cookieParser = require("cookie-parser");
 
+const PORT = process.env.PORT 
+
 
 const app = express();
 app.use(cors());
@@ -20,7 +22,7 @@ app.get("/message" , function(req,res){
 
 app.use(router);
 // console.log(a.json());
-app.listen(8005 , function(){
+app.listen(PORT || 8005 , function(){
     console.log("server is up and running");
 });
 
