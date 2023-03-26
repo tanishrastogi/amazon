@@ -110,7 +110,7 @@ router.post("/login",  async(req,res)=>{
                 // console.log("router.js line: 106"+token);
 
                 res.cookie("AmazonWeb", token , {
-                    expires:new Date(Date.now()+900000),
+                    expires:new Date(Date.now()+90000),
                     httpOnly:true 
                 })
 
