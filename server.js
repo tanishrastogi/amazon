@@ -3,8 +3,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 require("./db/conn");
-const Products = require("./models/productsSchema");
-const defaultData = require("./defaultData")
+// const Products = require("./models/productsSchema");
+// const defaultData = require("./defaultData")
 const router = require("./Routes/router");
 const cookieParser = require("cookie-parser");
 
@@ -28,6 +28,6 @@ app.listen(PORT || 8005 , function(){
     console.log("server is up and running");
 });
 
-defaultData();
+// defaultData();
 
 
