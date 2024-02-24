@@ -13,7 +13,8 @@ const PORT = process.env.PORT
 
 const app = express();
 app.use(cors({
-    origin:"*"
+    origin:"https://amazon0054a.netlify.app",
+    credentials:true
 }));
 app.use(express.json());
 app.use(cookieParser(""));
